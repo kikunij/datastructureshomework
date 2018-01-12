@@ -2,7 +2,7 @@
 #Write a program that reads a text file and outputs the text file with line numbers at the beginning of each line.
 
 def main():
-    file = open("poem.txt", "r")
+    file = open("text.txt", "r")
     text = file.readlines()
     lineNumber = 1
 
