@@ -18,7 +18,7 @@ class RacingTurtle:
     def __init__ (self, speed, turnDelay, name):
         self.name = name
         self.turt = turtle.Turtle()
-        self.speed = 20 * ( 1 + (speed/100))
+        self.speed = speed
         self.turnDelay = 0 + turnDelay
 
     def getX(self):
@@ -33,11 +33,11 @@ class RacingTurtle:
         
     def forward(self, distance):
         """Moves the turtle forward speed + distance"""
-        self.turt.forward(distance * self.speed)
+        self.turt.forward(1)
 
     def turnRight(self, degrees):
         self.turt.right(degrees)
-        sleep(self.turnDelay)
+        time.sleep(self.turnDelay)
 
     def turnLeft(self, degrees):
         self.turt.left(degrees)
@@ -46,42 +46,90 @@ class RacingTurtle:
 
 
 racerone = RacingTurtle( 0, 0, "Racer one")
-eugene = RacingTurtle(15, 500, "Eugene 'the machine' Topps")
+eugene = RacingTurtle(15, 0.5, "Eugene 'the machine' Topps")
+blaze = RacingTurtle(40, 1, "Blaize")
+Zeus = 
 
 eugene.turt.penup()
 eugene.turt.sety( 50)
 eugene.turt.pendown()
 
+blaze.turt.penup()
+blaze.turt.sety( -150)
+blaze.turt.pendown()
 
 time.clock()
 eugeneStartTime = time.clock()
 
-#leg 1
+def runRace(rt):
+    time.clock()
+    startTime = timw.clock()
+    
 
-while ( racerone.getX() < 100):
-        racerone.forward(1)
+    #forward 27
+    #right 90
+    #forward 100
+    leg1Distance = 100* (1 - rt.speed/100)
 
-#turn
-racerone.turnright(90)
+    for i in range(leg1distance):
+        rt.forward()
+        rt.turnright(90)
 
-#leg 2
-while ( racerone.getY() < 100):
-        recerone.forward(1)
-receroneStartTime = time.clock()
+        leg2distance = 100 * (1 - rt.speed/100)
+    for i in range(leg1distance):
+        rt.forward()
+        rt.turnright(90)
+        rt.forward(100)
+        endTime = time.clock()
 
-#leg 1
+for runForward(dist, rt):
+    distance = int(1 - rt.speed/100)
+for i in range(distance):
+        rt.forward()
+###leg 1
+##
+##while ( racerone.getX() < 100):
+##        racerone.forward(1)
+##
+###turn
+##racerone.turnRight(90)
+##
+###leg 2
+##while ( racerone.getY() < 100):
+##        racerone.forward(1)
+##receroneStartTime = time.clock()
 
-while ( eugene.getX() < 100):
-        eugene.forward(1)
-
-#turn
-eugene.turnright(90)
 
 
-#leg 2
-while ( eugene.getY() < 100):
-        eugene.forward(1)
-eugeneStartTime = time.clock()
+
+##
+###leg 1
+##
+##while ( eugene.getX() < 100):
+##        eugene.forward(1)
+##
+###turn
+##eugene.turnRight(90)
+##
+##
+###leg 2
+##while ( eugene.getY() < 100):
+##        eugene.forward(1)
+##eugeneStartTime = time.clock()
+
+###leg 1
+##
+##while ( blaze.getX() < 27):
+##        blaze.forward(1)
+##
+###turn
+##blaze.turnRight(90)
+##
+##
+###leg 2
+##while ( blaze.getY() < -100):
+##        blaze.forward(1)
+##blazeStartTime = time.clock()
 
 ##while True:
 ##    racerone.forward(1)
