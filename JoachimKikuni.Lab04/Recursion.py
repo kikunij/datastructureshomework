@@ -1,3 +1,5 @@
+#Joachim Kikuni
+#Write a python program that asks the user to enter a positive integer and calls a recursive function that returns the number of steps it takes to reach 1.
 
 ##number = int(input("enter a positive number:"))
 

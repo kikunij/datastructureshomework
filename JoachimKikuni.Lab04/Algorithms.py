@@ -1,3 +1,6 @@
+#Joachim Kikuni
+#Write a python function that Recursively calculates the nth fibonacci number. The fibonacci sequence is defined as:
+
 def Fibonacci(n):
     if n<0:
         print("invalid number")
@@ -5,5 +8,5 @@ def Fibonacci(n):
         return 1
     else:
         return Fibonacci(n-1)+Fibonacci(n-2)
-for n in range (0,10):  
+for n in range (0,100):  
     print(n, ":", Fibonacci(n))
