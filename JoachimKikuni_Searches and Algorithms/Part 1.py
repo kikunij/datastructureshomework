@@ -12,5 +12,3 @@ def linear_word_finder(word):
             index += 1
 print(linear_word_finder("Jacob"))
 
-
-def binary_word_finder(word)
